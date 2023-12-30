@@ -1,0 +1,20 @@
+{% comment %}
+{% extends "master.html" %}
+
+{% block title %}
+  Taiwan Travel - List of all activites
+{% endblock %}
+
+
+{% block content %}
+
+  <h3>Activities</h3>
+  
+  <ul>
+    {% for x in activites %}
+      <li>{{ x.activityspot }} {{ x.activityname }}, {{x.activityinfo}}</li>      
+    {% endfor %}
+  </ul>
+
+{% endblock %}
+{% endcomment %}

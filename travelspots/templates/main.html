@@ -1,0 +1,58 @@
+{% extends "master.html" %}
+{% load static %}
+
+{% block title %}
+  My Travelspots
+{% endblock %}
+
+
+{% block content %}
+
+  <div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+    <!-- New elements for homepage -->
+    <div id="search-bar">
+        <!-- Add your search bar code here -->
+        <input type="text" placeholder="Search...">
+        <button type="button">Search</button>
+    </div>
+
+    <div id="announcement">
+        <!-- Add your announcement image here -->
+        <img src="announcement.jpg" alt="Announcement Image" style="width: 100%;">
+    </div>
+
+    <div id="popular-attractions">
+        <!-- Add your popular attractions cards here -->
+        <div class="attraction-card">
+            <img class="attraction-image" src="attraction1.jpg" alt="Attraction 1">
+            <h3>Attraction 1</h3>
+            <p>Location: City 1</p>
+        </div>
+
+        <div class="attraction-card">
+            <img class="attraction-image" src="attraction2.jpg" alt="Attraction 2">
+            <h3>Attraction 2</h3>
+            <p>Location: City 2</p>
+        </div>
+
+        <div class="attraction-card">
+            <img class="attraction-image" src="attraction3.jpg" alt="Attraction 3">
+            <h3>Attraction 3</h3>
+            <p>Location: City 3</p>
+        </div>
+        <!-- Add more cards as needed -->
+    </div>
+  </div>
+
+
+
+{% comment %}
+  <h1>My Travelspots</h1>
+
+  <h3>Travelspots</h3>
+  
+  <p>Check out all our <a href="travelspots/">travelspots</a></p>
+  {% endcomment %}
+
+{% endblock %}

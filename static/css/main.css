@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+#sidebar a:hover {
+    color: #f1f1f1;
+}
+
+#sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left 0.5s;
+    padding: 16px;
+}
+
+.styl1 {
+    border: 1px solid #2287ac;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.submenu {
+    padding-left: 32px;
+    display: none;
+}
+
+.submenu a {
+    padding: 8px;
+}
+
+#search-bar {
+    padding: 10px;
+    margin: 20px;
+    width: 80%;
+}
+
+#announcement {
+    margin: 20px;
+    padding: 10px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+#popular-attractions {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.attraction-card {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.attraction-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
